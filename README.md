@@ -1,7 +1,6 @@
-# Zadanie 1 - BANG Lite
-B-OOP 2023
+BANG Lite
 
-Vašou úlohou je naprogramovať zjednodušenú kartovú hru BANG ako **konzolovú** hru v jazyku Java.
+Ciel projektu je naprogramovať zjednodušenú kartovú hru BANG ako **konzolovú** hru v jazyku Java.
 
 ## Úvod do hry
 
@@ -95,58 +94,13 @@ Túto kartu pri zahratí vykladáte pred seba. Efekt karty Dynamit sa kontroluje
 
 Pokiaľ by nastala situácia, že hráč má na začiatku kola pred sebou aj kartu Väzenie aj Dynamit, kontroluje sa najskôr efekt karty Dynamit a až potom Väzenie.
 
-## Hodnotenie
-
-Zadanie je hodnotené 10 bodmi. 5 bodov je za funkčnosť zadania, 5 bodov za Princípy OOP. **Odovzdaný program musí byť skompilovateľný, inak je
-hodnotený 0 bodmi**. Skompilovateľnosť zadania kontroluje aj github pipeline. Hlavný dôraz v hodnotení sa kladie na objektový prístup a princípy,
-okrem iného:
-
-* vhodné pomenovanie tried a metód v jednotnom jazyku (názvy tried s veľkým počiatočným písmenom, názvy metód s malým),
-* vhodné použitie modifikátorov prístupu (public, private, poprípade protected) na obmedzenie prístupu k metódam a atribútom,
-* využitie dedenia a polymorfizmu,
-* použitie výnimiek na ošetrenie nedovoleného správania (nehádzať a nezachytávať všeobecnú triedu Exception),
-* nepoužívajte nested classy,
-* vo vašich triedach nevytvárajte statické metódy (v zadaní nie sú potrebné),
-* v hlavnej triede (main) nevytvárajte žiadnu logiku, iba vytvorte nový objekt.
-
-Niektoré z vecí, za ktoré sme minulý rok strhli po 0,5 - 1 bode:
-
-* Rozhodovanie použitia kariet cez If/Switch (nato treba použiť dedenie)
-* Neošetrené vstupy
-* Kód v Main triede (máme tam len zavolať triedu, ktorou spustíme hru, nič viac)
-* Nevyužité dedenie
-* Statické premenné
-* Zlý package naming
-* Nepoužívanie konvencíí pomenovania tried a premenných
-* new Scanner alebo Random (stále vytváranie novej a novej inštancie, treba vytvoriť len jednu a používať tú)
-* Nested class
-* Logika iba v jednej triede
-* Nevyuzitie polymorfizmu
-* Spadnutie hry na nejakej Exception
-* Inicializácia objektov priamo v mieste ich vytvorenia a nie v ich konštruktoroch
-* Nevhodné modifikátory prístupu
-* Nevypísanie víťaza na konci hry
-
-Prípadne sú pri nedostatočnej implementácií struhnuté body za OOP za nedostatočnú implementáciu.
-
-**Pri zadaní sa kontroluje originalita zadaní, a všetky zadania so zhodou vyššou ako 80% sú hodnotené 0 bodmi.**
-
-## Odovzdávanie
-Zadanie si naklonujte z repozitára zadania výhradne pomocou poskytnutej linky cez GitHub Classroom (pokiaľ si vygenerujete vlastný repozitár pomocou tlačidla "Use this template" z template repozitára, my váš repozitár neuvidíme a nebudeme ho hodnotiť!). Svoje vypracovanie nahrajte do pre vás vytvoreného repozitára pre toto zadanie pomocou programu Git (git commit + git push).
-Skontrolujte si, či sa váš repozitár nachádza pod skupinov **Interes-Group**, inak nemáme prístup ku vášmu repozitáru a zadanie sa nepovažuje za odovzdané. Vypracovanie môžete "push-ovať" priebežne. Hodnotiť sa bude iba _master_ branch. Zadanie je nutné vypracovať do **26.3.2023 23:00**. Hodnotený je posledný commit pred deadline-om.
-
-V projekte upravujte iba súbory v priečinku _src/main_ a jeho podpriečinkoch. Ostatné súbory je upravovať zakázané (predovšetkým súbory _pom.xml_, súbory obsahujúce github pipeline-y a súbory obsahujúce automatizované testy (ak sú súčasťou zadania)).
-
-Vo svojom github účte si nastavte svoje meno alebo AIS login (settings > profile > name), aby bolo možné priradiť riešenie ku študentovy. **Pokiaľ nebude možné spárovať študenta s riešením je zadanie hodnotené 0 bodmi!**
-
-## Zdroje (pre lepšie pochopenie zadania)
+## Zdroje (pre lepšie pochopenie hry)
 * [Pravidlá pôvodnej hry](https://eshop.albi.cz/data/files/products/24327/1603711687-bang-pravidla-zakladni-hry.pdf)
 
 # --------------------------------
-# Assignment 1 - BANG Lite
-B-OOP 2023
+BANG Lite
 
-Your task is to create a simplified version of card game "BANG" as a **console** game in Java.
+Task is to create a simplified version of card game "BANG" as a **console** game in Java.
 
 ## Introduction to the game
 
@@ -240,52 +194,5 @@ You place this card in front of you when you play it. The effect of the Dynamite
 
 If the situation should arise that the player has both a Prison and Dynamite card in front of him at the beginning of the round, the effect of the Dynamite card is checked first and only then the Prison card.
 
-## Evaluation
-You can get 10 points for this assignment. 5 points are given for fulfilling the outlined rules of the game, 5 points are given for complying with OOP principles. **The program must be able to compile, otherwise 0 points are given for the assigment**.
-
-The github pipeline checks whether the program can be compiled. The main focus during grading is put on object-oriented approach and OOP principles used by the solution.
-
-Also it is important to fulfill the following criteria:
-
-* appropriate naming of classes, methods and variables in a single language (class names starting with a capital letter, method names starting with a lowercase letter),
-* appropriate use of access modifiers (public, private, or protected) when restricting access to class methods and attributes, the use of inheritance and polymorphism,
-* usage of exceptions when handling undesired behavior (do not catch or throw the instances of the generic Exception class),
-* don't use nested classes,
-* don't use static methods, or non-constant static variables (you don't need them to complete the assignment),
-* don't put any logic into the main method and its class. The main method should only be used to create the game class,
-
-Issues that resulted in a 0.5 - 1 point reduction last year:
-* deciding the card effect with if/switch statements (should be done trough inheritance)
-* unchecked inputs
-* code in the Main class (we should only start the game here)
-* no use of inheritance (you should use inheritance)
-* static variables
-* bad package naming
-* non-conventional naming of classes and variables
-* new Scanner and Random (new instances were created with each call, only one instance should be created and re-used)
-* nested classes
-* the entire logic written in one class
-* no use of polymorphism
-* game crash caused by some Exception
-* initialisation of objects in the place they were created and not in their constructors
-* unsuitable access modifiers
-* the winner was not printed at the end of the game
-
-If the assignment lacks a substantial part of the specified functionality additional points are substracted.
-
-**The originality of the code is checks, all assignments with a more than 80% match are awarded with 0 points.**
-
-## Submission
-
-Clone the assignment from the repository created from this template by the provided link trough GitHub Classroom (if you create your own repository with the "use this template" button, we won't be able to see your repository, and we won't be able to grade it!). Upload your solutions to your repository using the Git version control system (git commit + git push).
-
-Make sure, that your repository was created under the **Interes-Group** group, otherwise we won't be able to access your repository, and the assignment will not be graded.
-
-You can push commits to the repository while you work - you don't have to push everything at once. Only the code in the _master_ branch will be graded. You have until **26.3.2023 23:00** to complete the assignment.
-
-Only edit files in the _src/main_ folder or its sub-folders. You mustn't change any other files in the repository (especially the _pom.xml_ file, and the github pipeline files).
-
-You have to have your name set in your github account (settings > profile > name), so that we can match students with their assignments. **If we are unable to match a student with their assignment, the student will receive 0 points for the assignment!**
-
-## Resources (for better understanding of the assignment)
+## Resources (for better understanding of the game)
 * [Rules of the original game](https://www.ultraboardgames.com/bang/game-rules.php)
